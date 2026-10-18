@@ -42,26 +42,34 @@
           </div>
         </div>
       </nav>
+
+
       <section id ="hero">
         <div class="hero-container">
-          <img
-            src="images/michelleliuprofilephoto.jpg"
-            alt="profile picture of Michelle Liu"
-          />
+          <img src="images/michelleliuprofilephoto.jpg" alt="profile picture of Michelle Liu"/>
         </div>
-        <h3>Hello, I'm Michelle :)</h3>
-        <span>
-          <a href = "documents/michelleliuCV copy.pdf" download="">
-            <button class="btn">Download CV</button>
-          </a>
-          <a href = "#contact">
-            <button class="btn">Contact</button>
-          </a>
-        </span>
+        <div class = "hero-text">
+          <h2>Hello, I'm</h2> 
+          <h1 class="hero-h1"> Michelle Liu </h1>
+          <h3>Welcome to my portfolio</h3>
+
+          <div class = "hero-buttons">
+          <button class="btn cv-button" onclick="window.open('documents/michelleliuCV copy.pdf')">Download CV</button>
+          <button class="btn" onclick="window.location.href='#contact'">Contact Info</button>
+          </div>
+
+          <div class = "hero-socials">
+          <img src="images/InBug-Black.png" alt="linkedin logo" class ="icon"
+            onclick = "location.href='https://www.linkedin.com/in/michelleliudesigns/'" />
+          <img src="images/Instagram_Glyph_Black.png" alt="instagram logo" class ="icon"
+            onclick = "location.href='https://www.instagram.com/michelleliudesigns/'" />
+          </div>
+        </div>
       </section>
+
       <section id="about"> 
         <h2>about.</h2>
-        <div class="comon-container"> 
+        <div class="common-container"> 
           <h4> Design Philosophy</h4>
           <p>Designing stuff that invites people into a visual playground of possibilities. Design to me is about imagination, experience-making and connection.</p>
         </div>
@@ -72,5 +80,3 @@
   </footer>
 
 </html>
-
-
