@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="Michelle Liu's Design Portfolio"/>
+    <title>Michelle Liu | Portfolio</title>
+    <link rel="icon" href="images/favicon-32x32.png" type="image/png" sizes = "32x32"/>
+    <link rel="icon" href="images/favicon-16x16.png" type="image/png" sizes = "16x16"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+  </head>
+  <body>
+      <nav id="desktop-nav">
+        <div class = "logo"> Michelle Liu</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#about">Purpose</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#playground">Playground</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="hamburger-nav">
+        <div class="logo"><a href="index.html">Michelle Liu</a></div> 
+        <div class = "hamburger-menu">
+          <div class = "hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="index.html#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="index.html#playground" onclick="toggleMenu()">Playground</a></li>
+            <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+      </nav>
+      
+      <section id ="project-overview">
+        <h2>PROJECTS.</h2>
+         <div class="project-layout">
+            <div class="mainprojectimage">
+            <img src="images/projectcoverpages-01.png" alt="Shape Morph Animation Thumbnail" class="project-image"/>
+            </div>
+
+            <div class = "project-text">
+            <h3>Shape Morph Animation</h3>
+            <p>Made on: Adobe After Effects
+                Sound Effects by: VIRALAUDIO from Pixabay and Diamond_Tunes from Pixabay
+                
+                For this short animation that’s literally 10secs it took me like over a week to do 😭 (but I did take heaps of long breaks in between)
+                The final is posted but here’s my rant/ reflection 🫠
+                This animation helped to familiarise myself with keyframing for position, scale and paths. I also learned the importance of anticipation in mographs (it actually makes a huge difference in the visual storytelling).
+                Note to self ✍️: imagine a hand drawing back before throwing a ball (I had to remind myself heaps but this actually helped to solidify the concept)
+                
+                For future development I do have a few ideas…
+                when the star warps into the sun, smaller shapes could fly off the tips to emphasise the momentum of the spin. - This could also be done on the other shapes. (I did try to investigate this a little but the direction of the drips flying off did confuse me especially in motion, also I tried to key frame it to scale down but it started moving positions as well?)
+                Add shadows to the shapes
+                When I started planning how the shapes would transition into the next I had an idea to make a lightning bolt strike from the cloud and then morph into a star (since they look similar) before looping again. I still think this could be a cool idea if I were to develop this further (although I’m wondering if I’ll need to learn how to use mattes for this?) also another thing that strayed away from the og plan was some of the morphs I ended up using masks for the last few but I think this was much more effective for those ending morphs anyways.
+                This is not rlly a development but in the future I would also include sound effects wayy earlier bc it rlly changes the experience and it would help to line up the pace of the effects and sound better.</p>
+
+            <div class = "hero-buttons">
+            <button class="btn cv-button" onclick="window.open('documents/michelleliuCV copy.pdf')">Download CV</button>
+            <button class="btn contact-button" onclick="window.location.href='#contact'">Contact Info</button>
+            </div>
+
+            <div class = "hero-socials">
+            <img src="images/InBug-Black.png" alt="linkedin logo" class ="icon"
+                onclick = "location.href='https://www.linkedin.com/in/michelleliudesigns/'" />
+            <img src="images/Instagram_Glyph_Black.png" alt="instagram logo" class ="icon"
+                onclick = "location.href='https://www.instagram.com/michelleliudesigns/'" />
+          </div>
+        </div>
+      </section>
+
+</body>
+</html>
