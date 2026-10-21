@@ -1,3 +1,17 @@
+/* ---------- LARGE LAPTOPS ---------- */
+@media screen and (max-width: 1400px) {
+  #hero {
+    height: auto;
+    min-height: 83vh;
+    margin-bottom: 4rem;
+  }
+
+  .purpose-section {
+    flex-wrap: wrap;
+  }
+}
+
+/* ---------- TABLETS / SMALL LAPTOPS ---------- */
 @media screen and (max-width: 1200px) {
   #desktop-nav {
     display: none;
@@ -5,19 +19,69 @@
   #hamburger-nav {
     display: flex;
   }
+
+  section {
+    margin: 0 4rem;
+  }
+
+  #hero {
+    gap: 3rem;
+  }
+  .hero-container {
+    width: 320px;
+  }
+  #hero h1 {
+    font-size: 4.5rem;
+  }
 }
 
-@media (max-width: 800px) {
-  .project-layout {
-    flex-direction: column;
-  }
-  .mainprojectimage {
-    flex: none;
-    width: 100%;
-    max-width: 100%;
-    position: static;
+/* ---------- PHONES AND SMALL TABLETS ---------- */
+@media screen and (max-width: 800px) {
+  section {
+    margin: 0 1.5rem;
+    height: auto;            /* global 96vh would crop stacked content */
+    padding-bottom: 3rem;
   }
 
+  /* Nav */
+  nav {
+    height: 12vh;
+    padding: 0 1.5rem;
+    justify-content: space-between;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  /* Hero */
+  #hero {
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 2rem;
+    min-height: auto;
+    margin-bottom: 2rem;
+  }
+  .hero-container {
+    width: 70%;
+    max-width: 300px;
+  }
+  #hero h1 {
+    font-size: 3rem;
+  }
+  #hero h2 {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+  .hero-buttons {
+    flex-wrap: wrap;
+  }
+
+  /* Headings */
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  /* About / Purpose */
   .purpose-section {
     flex-direction: column;
     gap: 2rem;
@@ -28,19 +92,50 @@
     position: static;
   }
 
-  #hero {
-    flex-direction: column;   /* image on top, text below */
+  /* Project cards on homepage */
+  .project-cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .project-card {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  /* Project page */
+  .project-layout {
+    flex-direction: column;
     gap: 2rem;
-    padding-top: 2rem;
+  }
+  .mainprojectimage {
+    flex: none;
+    width: 100%;
+    max-width: 100%;
+    position: static;
   }
 
-  .hero-container {
-    width: 70%;               /* image scales with the screen */
-    max-width: 300px;
+  /* Contact */
+  #contact h4 {
+    font-size: 0.95rem;
   }
+}
 
+/* ---------- SMALL PHONES ---------- */
+@media screen and (max-width: 480px) {
+  section {
+    margin: 0 1rem;
+  }
   #hero h1 {
-    font-size: 3rem;          /* 90px is too big for phones */
+    font-size: 2.5rem;
   }
-
+  h2 {
+    font-size: 2rem;
+  }
+  .logo {
+    font-size: 1.25rem;
+  }
+  .btn {
+    width: 100%;             /* full-width buttons are easier to tap */
+    max-width: 14rem;
+  }
 }
