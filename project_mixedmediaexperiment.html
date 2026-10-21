@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="Michelle Liu's Design Portfolio"/>
+    <title>Michelle Liu | Portfolio</title>
+    <link rel="icon" href="images/favicon-32x32.png" type="image/png" sizes = "32x32"/>
+    <link rel="icon" href="images/favicon-16x16.png" type="image/png" sizes = "16x16"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+  </head>
+  <body>
+      <nav id="desktop-nav">
+       <div class="logo"><a href="index.html">michelleliudesigns</a></div> 
+        <div>
+          <ul class="nav-links">
+            <li><a href="index.html#about">Purpose</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="index.html#playground">Playground</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="hamburger-nav">
+        <div class="logo"><a href="index.html">Michelle Liu</a></div> 
+        <div class = "hamburger-menu">
+          <div class = "hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="index.html#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="index.html#playground" onclick="toggleMenu()">Playground</a></li>
+            <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+      </nav>
+      
+      <section id ="project-overview">
+        <h2>PROJECTS.</h2>
+         <div class="project-layout">
+            <div class="mainprojectimage">
+            <img src="images/projectcoverpages-4.png" alt="Shape Morph Animation Thumbnail" class="project-image"/>
+            <video controls poster="images/projectcoverpages-04.png" class="project-video">
+                <source src="documents/dynamictext.mp4" type="video/mp4">Your browser doesn't support video.
+            </video>
+            <a href="documents/dynamictext.mp4" class="yellow-button" target="_blank" rel="noopener">Watch Animation</a>
+            </div>
+            
+
+            <div class = "project-text">
+            <h3>Mixed Media Experiment</h3>
+            <p>A very experimental combination of kinetic text and mixed media. This is what happens when you have too many ideas at once and everything starts getting a bit confusing. I started by experimenting with moving text, but I became too focused on what the words represented instead of the shapes they created as they moved. I was going to solve this by adding more words to the page, but then I got distracted by all the mixed media stuff. Whoops. Long story short, I started experimenting with adding mixed media into the animation and became really interested in the textures. This led to me adding more texture to my existing typography, which involved a lot of tutorials, trial and error, and trying to figure things out as I went.
+
+My thinking changed quite a lot throughout the process. I kept jumping between different ideas instead of sticking to one clear direction. But something interesting came out of that. The blurry textures, overlapping elements and shifting focus in the animation started to reflect the way my own thinking was moving throughout the process. I think this is probably one of the main things I’m taking away from this experiment. I originally thought I needed to have a clear idea and then execute it, but experimenting with different things can sometimes create ideas I wouldn’t have reached otherwise. At the same time, I’m learning that there is a point where experimentation can become too unfocused. I think I could have spent more time deciding what I wanted the animation to communicate instead of continuing to follow every new idea I had. 
+
+For my next animation, I want to try finding a better balance between experimenting and actually committing to an idea. For now, I’m still figuring out where this piece should go. Any thoughts on what I could explore or change next?
+
+</p>
+
+            <div class = "hero-buttons">       
+                <a href="index.html#projects" class="btn contact-button">More Projects</a>
+                <a href="index.html#contact" class="btn contact-button">Contact Info</a>
+            </div>
+
+            <div class = "hero-socials">
+                <a href="https://www.linkedin.com/in/michelleliudesigns/">
+                <img src="images/linkedin-icon.png" alt="linkedin logo" class ="icon">
+                </a>
+                <a href="https://www.instagram.com/michelleliudesigns/">
+                    <img src="images/instagram-icon.png" alt="instagram logo" class ="icon">
+                </a>
+
+          </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

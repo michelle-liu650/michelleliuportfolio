@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="Michelle Liu's Design Portfolio"/>
+    <title>Michelle Liu | Portfolio</title>
+    <link rel="icon" href="images/favicon-32x32.png" type="image/png" sizes = "32x32"/>
+    <link rel="icon" href="images/favicon-16x16.png" type="image/png" sizes = "16x16"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+  </head>
+  <body>
+      <nav id="desktop-nav">
+       <div class="logo"><a href="index.html">michelleliudesigns</a></div> 
+        <div>
+          <ul class="nav-links">
+            <li><a href="index.html#about">Purpose</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="index.html#playground">Playground</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="hamburger-nav">
+        <div class="logo"><a href="index.html">Michelle Liu</a></div> 
+        <div class = "hamburger-menu">
+          <div class = "hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="index.html#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="index.html#playground" onclick="toggleMenu()">Playground</a></li>
+            <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+      </nav>
+      
+      <section id ="project-overview">
+        <h2>PROJECTS.</h2>
+         <div class="project-layout">
+            <div class="mainprojectimage">
+            <img src="images/projectcoverpages-02.png" alt="Shape Morph Animation Thumbnail" class="project-image"/>
+            <video controls poster="images/projectcoverpages-2.png" class="project-video">
+                <source src="documents/mixedmediaanimation.mp4" type="video/mp4">Your browser doesn't support video.
+            </video>
+            <a href="documents/mixedmediaanimation.mp4" class="yellow-button" target="_blank" rel="noopener">Watch Animation</a>
+            </div>
+            
+
+            <div class = "project-text">
+            <h3>Mixed Media Animation</h3>
+            <p>Making the digital physical.. I’ve seen a few of these mixed media animations before and I just had to try! I wanted to see how physically interacting with the frames could change the look and feeling of an animation. One thing I found interesting was how this forced me to let go of any perfectionism as once I committed to cutting and scribbling over the frame there was no pressing ctrl z to undo. This encouraged me to lean into the handmade quality. At the same time, the limited frames and commitment meant I got a bit carried away with thinking of different hairstyles for each frame and kind of ignored the continuity of the doodles but the core image helped to stabilise the concept of motion over time. Would you try this kind of mixed media animation? If so, what would you draw over your footage?
+              edited on: Da Vinci Resolve
+              music: Amen Break - Think Break By Davi Hugo
+</p>
+
+            <div class = "hero-buttons">       
+                <a href="index.html#projects" class="btn contact-button">More Projects</a>
+                <a href="index.html#contact" class="btn contact-button">Contact Info</a>
+            </div>
+
+            <div class = "hero-socials">
+                <a href="https://www.linkedin.com/in/michelleliudesigns/">
+                <img src="images/linkedin-icon.png" alt="linkedin logo" class ="icon">
+                </a>
+                <a href="https://www.instagram.com/michelleliudesigns/">
+                    <img src="images/instagram-icon.png" alt="instagram logo" class ="icon">
+                </a>
+
+          </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
