@@ -27,7 +27,7 @@ h2 {
 }
 
 /* ----------------------DESKTOP NAV------------------------- */
-nav,.nav-links {
+nav, .nav-links {
   display:flex;
 }
 nav {
@@ -42,22 +42,25 @@ nav {
   font-size: 1.5rem;
 }
 
-a {
+nav a {
   color: black;
   text-decoration: none;
   text-decoration-color:white;
 }
 
-a:hover {
+nav a:hover {
   color: #FFCC00;
   text-decoration: underline;
   text-underline-offset:1rem;
 }
+
 .logo {
   font-size:2rem;
 }
-.logo:hover {
-  cursor: default;
+
+.logo a:hover{
+  font-size:2rem;
+  text-decoration: none;
 }
 
 
@@ -156,17 +159,18 @@ section {
   text-align: center;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 5rem;
-  height: 80vh;
+  height: auto;
+  min-height: 80vh;
 }
 .hero-container {
-  display: flex;
+  display:0 0 flex;
   width: 400px;
-  height: 400px;
+  max-width: 100%;
   margin: auto 0;
 }
 .hero-text {
-  align-self: center;
   text-align: center;
 }
 #hero h1 {
@@ -197,6 +201,15 @@ section {
   gap: 1rem;
 }
 
+.hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  object-fit: cover;  
+  overflow: hidden;    
+}
+
 /* ----------------ICONS-------------------- */
 .icon {
   cursor: pointer;
@@ -215,6 +228,9 @@ section {
   padding: 1rem;
   width: 8rem;
   border-radius: 2rem;
+  text-decoration: none;
+  color: black;
+  text-align:center;
 }
 
 .cv-button,
@@ -245,13 +261,13 @@ section {
   margin-top: 1rem;
 }
 .about-text {
-  border-radius: 10px;
-  height: 100%;
-  justify-content: space-evenly;
+   flex: 1;
 }
 
 #about {
   text-align: center;
+  height: auto;              /* global section rule sets 96vh */
+  padding-bottom: 4rem;
 }
 #about h2{
   color:#FFCC00;
@@ -260,18 +276,137 @@ section {
 
 #about p {
   font-weight:400;
-  margin-top: 1rem;
   text-align: left;
+  line-height: 1.7;
+  margin-top: 0;
+  margin-bottom: 1.25rem;
 }
 
 #about h3 {
   font-size: 1.5rem;
   color:#03045E;
   font-weight:500;
-  margin-top: 1rem;
+  margin-bottom: 1rem;
   text-align: left;
+  flex-direction: column;
+  align-items: center;
 }
 
+.about-img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.purpose-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 4rem;
+  margin-top: 2rem;
+}
+
+.about-side {
+  flex: 0 0 35%;
+  max-width: 400px;
+  position: sticky;          /* stays in view while the bio scrolls */
+  top: 2rem;
+}
+
+.philosophy {
+  margin-top: 80px;
+  padding-left: 1rem;
+  border-left: 4px solid #FFCC00;   /* accent line using your yellow */
+}
+
+/* ------------------- CONTACT -----------------------------*/
+
+#contact {
+  height: auto;             /* global section rule sets 96vh */
+  padding-bottom: 4rem;
+}
+
+#contact a {
+  display: flex;
+  flex-direction: row;    /* side by side */
+  align-items: center;    /* vertically centers icon and text */
+  gap: 0.75rem;           /* space between icon and label */
+  text-decoration: none;
+  color: black;
+  margin: 40px 40px;
+}
+
+
+/* ------------------------PROJECTS CARDS------------------------*/
+#projects {
+  height: auto;          /* global section rule sets 96vh, which would crop or stretch this */
+  padding-bottom: 4rem;
+}
+
+.project-cards-container {
+  display: flex;
+  flex-wrap: wrap;       /* cards drop to the next row when there's no room */
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  flex: 1 1 280px;       
+  max-width: 350px;      
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;     
+  transition: transform 300ms ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  text-decoration: none; 
+  color: inherit;        
+}
+
+.project-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;   /* keeps all thumbnails the same shape */
+  object-fit: cover;     /* crops instead of squishing */
+  display: block;
+}
+
+.yellow-button {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 10px;
+  border-radius: 2rem;
+  border:black 2px solid;
+  margin-top: 1rem;
+  background-color:#FFCC00;
+  text-decoration: none; 
+  color: black; 
+  text-align: center;
+  
+}
+
+.project-video {
+  width: 100%;
+  border-radius: 10px;
+}
+#projects h4 {
+  margin: 20px;
+}
+
+#projects p {
+  margin-left: 20px;
+}
+
+#playground h4 {
+  margin: 20px;
+}
+
+#playground p {
+  margin-left: 20px;
+}
 
 /* ------------------------PROJECTS PAGE------------------------*/
 
@@ -295,6 +430,10 @@ section {
   max-width: 450px;
   position: sticky;              /* stays in view while the text scrolls */
   top: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .project-image {
@@ -325,3 +464,5 @@ section {
 #project-overview .hero-socials {
   justify-content: flex-start;   /* align buttons/icons left with the text */
 }
+
+

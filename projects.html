@@ -16,13 +16,13 @@
   </head>
   <body>
       <nav id="desktop-nav">
-        <div class = "logo"> Michelle Liu</div>
+       <div class="logo"><a href="index.html">michelleliudesigns</a></div> 
         <div>
           <ul class="nav-links">
-            <li><a href="#about">Purpose</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#playground">Playground</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="index.html#about">Purpose</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="index.html#playground">Playground</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
@@ -48,7 +48,12 @@
          <div class="project-layout">
             <div class="mainprojectimage">
             <img src="images/projectcoverpages-01.png" alt="Shape Morph Animation Thumbnail" class="project-image"/>
+            <video controls poster="images/projectcoverpages-01vid.png" class="project-video">
+                <source src="documents/celestialmorph.mp4" type="video/mp4">Your browser doesn't support video.
+            </video>
+            <a href="documents/celestialmorph.mp4" class="yellow-button" target="_blank" rel="noopener">Watch Animation</a>
             </div>
+            
 
             <div class = "project-text">
             <h3>Shape Morph Animation</h3>
@@ -66,19 +71,22 @@
                 When I started planning how the shapes would transition into the next I had an idea to make a lightning bolt strike from the cloud and then morph into a star (since they look similar) before looping again. I still think this could be a cool idea if I were to develop this further (although I’m wondering if I’ll need to learn how to use mattes for this?) also another thing that strayed away from the og plan was some of the morphs I ended up using masks for the last few but I think this was much more effective for those ending morphs anyways.
                 This is not rlly a development but in the future I would also include sound effects wayy earlier bc it rlly changes the experience and it would help to line up the pace of the effects and sound better.</p>
 
-            <div class = "hero-buttons">
-            <button class="btn cv-button" onclick="window.open('documents/michelleliuCV copy.pdf')">Download CV</button>
-            <button class="btn contact-button" onclick="window.location.href='#contact'">Contact Info</button>
+            <div class = "hero-buttons">       
+                <a href="index.html#projects" class="btn contact-button">More Projects</a>
+                <a href="index.html#contact" class="btn contact-button">Contact Info</a>
             </div>
 
             <div class = "hero-socials">
-            <img src="images/InBug-Black.png" alt="linkedin logo" class ="icon"
-                onclick = "location.href='https://www.linkedin.com/in/michelleliudesigns/'" />
-            <img src="images/Instagram_Glyph_Black.png" alt="instagram logo" class ="icon"
-                onclick = "location.href='https://www.instagram.com/michelleliudesigns/'" />
+                <a href="https://www.linkedin.com/in/michelleliudesigns/">
+                <img src="images/linkedin-icon.png" alt="linkedin logo" class ="icon">
+                </a>
+                <a href="https://www.instagram.com/michelleliudesigns/">
+                    <img src="images/instagram-icon.png" alt="instagram logo" class ="icon">
+                </a>
+
           </div>
         </div>
-      </section>
-
+    </section>
+    <script src="script.js"></script>
 </body>
 </html>

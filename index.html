@@ -16,7 +16,7 @@
   </head>
   <body>
       <nav id="desktop-nav">
-        <div class = "logo"> Michelle Liu</div>
+        <div class = "logo">michelleliudesigns</div>
         <div>
           <ul class="nav-links">
             <li><a href="#about">Purpose</a></li>
@@ -45,7 +45,7 @@
 
       <section id ="hero">
         <div class="hero-container">
-          <img src="images/michelleliuprofilephoto.jpg" alt="profile picture of Michelle Liu"/>
+          <img src="images/logo.png" alt="profile picture of Michelle Liu" class="hero-img"/>
         </div>
         <div class = "hero-text">
           <h2>Hello, I'm</h2> 
@@ -53,90 +53,101 @@
           <h3>Welcome to my portfolio</h3>
 
           <div class = "hero-buttons">
-          <button class="btn cv-button" onclick="window.open('documents/michelleliuCV copy.pdf')">Download CV</button>
-          <button class="btn contact-button" onclick="window.location.href='#contact'">Contact Info</button>
-          </div>
+          <a href="documents/michelleliu-cv.pdf" class="btn cv-button" target="_blank" rel="noopener">Download CV</a>
+          <a href="#contact" class="btn contact-button">Contact Info</a>
+        </div>
 
           <div class = "hero-socials">
-          <img src="images/InBug-Black.png" alt="linkedin logo" class ="icon"
-            onclick = "location.href='https://www.linkedin.com/in/michelleliudesigns/'" />
-          <img src="images/Instagram_Glyph_Black.png" alt="instagram logo" class ="icon"
-            onclick = "location.href='https://www.instagram.com/michelleliudesigns/'" />
+            <a href="https://www.linkedin.com/in/michelleliudesigns/">
+              <img src="images/linkedin-icon.png" alt="linkedin logo" class ="icon">
+            </a>
+            <a href="https://www.instagram.com/michelleliudesigns/">
+              <img src="images/instagram-icon.png" alt="instagram logo" class ="icon">
+            </a>
           </div>
-        </div>
-      </section>
 
-      <section id="about"> 
-        <h2>PURPOSE.</h2>
-        <div class="purpose-section">
-          <div class="about-text"> 
-            <h3> Design Philosophy</h3>
-            <p>Designing stuff that invites people into a visual playground of possibilities. Design to me is about imagination, experience-making and connection.</p>
-            <h3>Bio</h3>
-            <p>I'm a design and commerce student at the University of Auckland, interested in the ways visual storytelling, motion and technology can come together to create meaningful experiences.
-            <p>I've always been drawn to stories. Growing up, books and films gave me places to escape to, characters to see myself in and worlds where I could feel like I belonged. I think that's what draws me to storytelling: the way something imagined can make us feel understood, connected or a little less alone. I'd love to create things that leave people with even a fragment of that feeling.</p>
-            <p>When it comes to making, I like to dream big, approaching ideas with an open mind and seeing how far I can take them. I enjoy figuring things out along the way, experimenting, playing with different materials and putting things together until an idea becomes something tangible. There's something incredibly satisfying about seeing all those little pieces come together into something I can be proud of.</p>
-            <p>For me, design is about imagination, empathy and play. I'm interested in how movement, visuals and interaction can invite people into an experience, spark curiosity and create connections. At the moment, I'm exploring motion design and UX/UI, figuring out how my interests in storytelling and technology might come together in my practice.</p>
-            <p>I'm still discovering where design will take me, and I'm excited by the possibilities. For now, I'm here to keep experimenting, make things that mean something and see where a little curiosity can lead.</p>
-            <p>Have a look around, and if something resonates with you, I'd love to connect!</p>
-          </div>
-      </div>
-        
       </section>
 
       <section id="projects">
         <h2>PROJECTS.</h2>
-        <div class="common-container">
+        <div class="project-cards-container">
           <div class="project-card">
-            <img src="images/portfolio-projects.png" alt="portfolio project thumbnail"/>
+            <img src="images/projectcoverpages-01vid.png" alt="Shape Morph Animation Thumbnail"/>
             <h4>Shape Morph Animation</h4>
-            <button class="btn" onclick = "location.href='projects.html'">View Project</button>
+            <a href="projects.html" class="yellow-button">View Project</a>
           </div>
           <div class="project-card">
-            <img src="images/portfolio-projects.png" alt="portfolio project thumbnail"/>
+            <img src="images/projectcoverpages-02.png" alt="Mixed Media Animation Thumbnail"/>
             <h4>Mixed Media Animation</h4>
-            <button class="btn" onclick = "location.href='projects.html'">View Project</button>
+            <a href="projects.html" class="yellow-button">View Project</a>
           </div>
           <div class="project-card">
-            <img src="images/portfolio-projects.png" alt="portfolio project thumbnail"/>
+            <img src="images/projectcoverpages-03.png" alt="Flipbook Artefact Thumbnail"/>
             <h4>Flipbook Artefact</h4>
-            <button class="btn" onclick = "location.href='projects.html'">View Project</button>
+            <a href="projects.html" class="yellow-button">View Project</a>
           </div>
         </div>
       </section>
 
       <section id="playground">
         <h2>PLAYGROUND.</h2>
-        <div class="common-container">
+        <div class="project-cards-container">
           <div class="project-card">
-            <img src="images/portfolio-projects.png" alt="portfolio project thumbnail"/>
+            <img src="images/projectcoverpages-04.png" alt="portfolio project thumbnail"/>
             <h4>Mixed Media Motion</h4>
-            <p>My personal portfolio website, built with HTML, CSS and JavaScript. </p>
-            <button class="btn" onclick = "location.href='projects/portfolio.html'">View Project</button>
+            <p>Experimenting with kinetic text and mixed media. </p>
+            <a href="projects.html" class="yellow-button">View Project</a>
           </div>
           <div class="project-card">
-            <img src="images/portfolio-projects.png" alt="portfolio project thumbnail"/>
-            <h4>Case Study: Monsters Inc. title Card</h4>
-            <p>My personal portfolio website, built with HTML, CSS and JavaScript. </p>
-            <button class="btn" onclick = "location.href='projects/portfolio.html'">View Project</button>
-          </div>
-          <div class="project-card">
-            <img src="images/portfolio-projects.png" alt="portfolio project thumbnail"/>
-            <h4>My Process -Case Study</h4>
-            <p>My personal portfolio website, built with HTML, CSS and JavaScript. </p>
-            <button class="btn" onclick = "location.href='projects/portfolio.html'">View Project</button>
+            <img src="images/projectcoverpages-05.png" alt="portfolio project thumbnail"/>
+            <h4>My Process - Case Study</h4>
+            <p>short chracter animation, playing with light effects. </p>
+            <a href="projects.html" class="yellow-button">View Project</a>
           </div>
         </div>
       </section>
+
+      <section id="about"> 
+        <h2>PURPOSE.</h2>
+
+        <div class="purpose-section">
+        
+          <!----left column---->
+          <div class="about-side"> 
+            <img src="images/michelleliuprofilephoto.jpg" alt="Michelle Liu" class="about-img"/>
+          </div>
+          
+          <!----right column---->
+          <div class="about-text"> 
+            <h3>Stories made me feel like I belonged. I make new ones for the same reason.</h3>
+            <p>Growing up, books and films were my escape hatches: worlds to wander, characters to see myself in. Now I get to build those worlds myself, with whatever tools the story needs.</p>
+            <p>I’m a design and commerce student at the University of Auckland, and a bit of a multidisciplinary designer. I'm currently diving deeper into motion design and UX/UI. I like to dream big, experiment, and piece things together until an idea becomes something real.</p>
+            <p>Have a look around, and if something resonates, say hi!</p>
+
+            <div class="philosophy">
+              <h3> Michelle's Design Philosophy</h3>
+              <p>I design things that invite people into a visual playground of possibilities, built on imagination, experience and connection.</p>
+            </div>
+          </div>
+      </div>
+      </section>
+
       <section id="contact">
         <h2>CONTACT.</h2>
-        <div class="common-container">
-          <div class="contact-card">
-            <h4>Email</h4>
-            <h4>Instagram</h4>
-            <h4>LinkedIn</h4>
-          </div>
-        </div>
+            <a href = "mailto:michelleliudesigns@gmail.com"> 
+              <img src="images/gmail-icon.png" alt="gmail logo" class ="icon"/>
+              <h4>Email: michelleliudesigns@gmail.com</h4>
+            </a>
+            
+            <a href = "https://www.instagram.com/michelleliudesigns/"> 
+              <img src="images/instagram-icon.png" alt="instagram logo" class ="icon"/>
+              <h4>Instagram: @michelleliudesigns</h4>
+            </a>
+
+            <a href = "https://www.linkedin.com/in/michelleliudesigns/"> 
+              <img src="images/linkedin-icon.png" alt="linkedin logo" class ="icon"/>
+              <h4>LinkedIn: michelleliudesigns</h4>
+            </a>
       </section>
       <script src="script.js"></script>
   </body>

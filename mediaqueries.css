@@ -1,10 +1,11 @@
 @media screen and (max-width: 1200px) {
-    #desktop-nav {
-        display: none;
-    }
-    #hamburger-nav {
-        display: flex;
-    }
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+}
 
 @media (max-width: 800px) {
   .project-layout {
@@ -16,5 +17,30 @@
     max-width: 100%;
     position: static;
   }
-}
+
+  .purpose-section {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .about-side {
+    flex: none;
+    max-width: 100%;
+    position: static;
+  }
+
+  #hero {
+    flex-direction: column;   /* image on top, text below */
+    gap: 2rem;
+    padding-top: 2rem;
+  }
+
+  .hero-container {
+    width: 70%;               /* image scales with the screen */
+    max-width: 300px;
+  }
+
+  #hero h1 {
+    font-size: 3rem;          /* 90px is too big for phones */
+  }
+
 }
