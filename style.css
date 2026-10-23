@@ -359,6 +359,8 @@ section {
   border-radius: 10px;
   overflow: hidden;     
   transition: transform 300ms ease;
+  text-decoration: none;
+  color: black;
 }
 
 .project-card:hover {
